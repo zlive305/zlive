@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <iostream>
-#include <sys/types.h>
 
 #include <eventfd.h>
 #include <arpa/inet.h>
