@@ -29,6 +29,7 @@ int main() {
   
   int ret = read(servaddr, (struct sockaddr *) &accept->servaddr, sizeof servaddr);
   int accept = accept(servaddr, (struct sockaddr *) &servaddr, sizeof servaddr);
+  printf("",sizeof(accept)); // accept
   while (1) {
     if (ret == 0) {
       printf("server close");
