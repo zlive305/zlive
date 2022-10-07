@@ -26,8 +26,8 @@ int main() {
   if (bindfd = bind(servaddr, (struct sockaddr *) &servaddr, sizeof servaddr) < 0) {
     perror("bind");
   }
-  
-  int ret = read(servaddr, (struct sockaddr *) &accept->servaddr, sizeof servaddr);
+
+  int ret = read(servaddr, (struct sockaddr *) &accept.servaddr, sizeof servaddr);
   int accept = accept(servaddr, (struct sockaddr *) &servaddr, sizeof servaddr);
   printf("",sizeof(accept)); // accept
   while (1) {
